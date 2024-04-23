@@ -1,8 +1,4 @@
-/*
-* "Wahai orang-orang yang beriman, mengapakah kamu mengatakan sesuatu yang tidak kamu kerjakan?
-* Amat besar kebencian di sisi Allah bahwa kamu mengatakan apa-apa yang tidak kamu kerjakan."
-* (QS ash-Shaff: 2-3).
-*/
+
 const { decryptMedia } = require('@open-wa/wa-decrypt')
 const fs = require('fs-extra')
 const axios = require('axios')
@@ -44,14 +40,14 @@ module.exports = msgHandler = async (client, message) => {
         }
 
         const mess = {
-            wait: '[ WAIT ] Sedang di proses⏳ silahkan tunggu sebentar',
+            wait: '[ WAIT ] Sedang di proses⏳ silahkan tunggu sebentar cik',
             error: {
                 St: '[❗] Kirim gambar dengan caption *!sticker* atau tag gambar yang sudah dikirim',
                 Qm: '[❗] Terjadi kesalahan, mungkin themenya tidak tersedia!',
                 Yt3: '[❗] Terjadi kesalahan, tidak dapat meng konversi ke mp3!',
                 Yt4: '[❗] Terjadi kesalahan, mungkin error di sebabkan oleh sistem.',
                 Ig: '[❗] Terjadi kesalahan, mungkin karena akunnya private',
-                Ki: '[❗] Bot tidak bisa mengeluarkan admin group!',
+                Ki: '[❗] Bot tidak bisa mengeluarkan admin group, dongo!',
                 Ad: '[❗] Tidak dapat menambahkan target, mungkin karena di private',
                 Iv: '[❗] Link yang anda kirim tidak valid!'
             }
